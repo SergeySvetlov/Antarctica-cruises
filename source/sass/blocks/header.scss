@@ -1,0 +1,39 @@
+.header {
+  background-color: $color-tangaroa;
+  background-image: url("../img/background.jpg");
+  background-size: 1366px auto;
+  background-repeat: no-repeat;
+  background-position: top -185px center;
+  
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background@2x.jpg");
+  }
+}
+
+@include vp-1439 {
+  .header {
+    background-color: $color-tangaroa;
+    background-image: url("../img/background.jpg");
+    background-size: 1366px auto;
+    background-repeat: no-repeat;
+    background-position: top -185px center;
+    
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background@2x.jpg");
+    }
+  }
+}
+
+@include vp-1023 {
+  .header {
+    background-size: 850px auto;
+    background-position: top center;
+  }
+}
+
+@include vp-767 {
+  .header {
+    background-size: 767px auto;
+    background-position: top -5px left -205px;
+  }
+}
