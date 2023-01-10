@@ -1,9 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {onLinkButtonClick, onContactsButtonClick, onDetailsButtonClick} from './modules/accordions/accordion';
-import {editText} from './modules/mobile/mobile';
+import {checkForm} from './modules/form/form';
 import {animateAnchors} from './modules/anchor/anchor';
-import {checkForm, checkModalForm} from './modules/form/form';
+import {onPopupButtonClick} from './modules/popup/popup'
 
 // ---------------------------------
 
@@ -20,14 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    editText();
     initModals();
-    onLinkButtonClick();
-    onContactsButtonClick();
-    onDetailsButtonClick();
-    animateAnchors();
+    onPopupButtonClick();
     checkForm();
-    checkModalForm();
+    animateAnchors();
   });
 });
 

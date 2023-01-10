@@ -19,13 +19,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <section class="header-top header-top--close">
+          <section class="header-top" data-menu>
             <a class="header-top__logo">
               <svg class="header-top__logo-img" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite/sprite.svg#logo"></use>
               </svg>
             </a>
-            <button class="header-top__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="header-top__nav-toggle" type="button" data-popup><span class="visually-hidden">Кнопка меню</span></button>
             <nav class="nav">
               <ul class="nav__links-list">
                 <li class="nav__links-item">
@@ -247,11 +247,11 @@
               </fieldset>
               <fieldset class="feedback__fieldset">
                 <label class="visually-hidden" for="mail">Телефон</label>
-                <input placeholder="Email" type="mail" name="mail" id="mail" data-mail-pattern required>
+                <input placeholder="Email" type="mail" name="mail" id="mail" data-mail-pattern>
               </fieldset>
               <fieldset class="feedback__fieldset feedback__fieldset--checkbox">
                 <label class="feedback__approval">
-                  <input class="visually-hidden" type="checkbox" name="approval" approval="feedback">
+                  <input class="visually-hidden" type="checkbox" name="approval" approval="feedback" required>
                   <span class="feedback__approval-control"></span>
                   <span text="feedback">Я согласен на обработку моих персональных данных</span>
                 </label>
