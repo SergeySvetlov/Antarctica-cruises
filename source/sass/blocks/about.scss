@@ -1,93 +1,93 @@
 .about {
-    padding: 120px 0 145px 0;
+  padding: 120px 0 145px 0;
 
-    .container {
-        display: flex;
-    }
+  .container {
+    display: flex;
+  }
 
-    h2 {
-        display: block;
-        margin: 57px 0 23px 0;
-        padding: 0 160px 0 0;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 42px;
-        word-wrap: break-word;
-    }
+  h2 {
+    display: block;
+    margin: 57px 0 23px 0;
+    padding: 0 160px 0 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    word-wrap: break-word;
+  }
 
-    p {
-        display: block;
-        margin: 0;
-        padding: 0 85px 0 0;
-        word-wrap: break-word;
-    }
+  p {
+    display: block;
+    margin: 0;
+    padding: 0 85px 0 0;
+    word-wrap: break-word;
+  }
 
-    img {
-        display: block;
-        margin: 0 0 0 auto;
-        max-width: 50%;
-        object-fit: contain;
-    }
+  img {
+    display: block;
+    margin: 0 0 0 auto;
+    max-width: 50%;
+    object-fit: contain;
+  }
 }
 
 @include vp-1023 {
-    .about {
-        padding: 91px 0 93px 0;
-    
-        .container {
-            display: flex;
-        }
-    
-        h2 {
-            margin: 0 0 16px 0;
-            padding: 0 144px 0 0;
-            font-size: 26px;
-            line-height: 36.4px;
-        }
-    
-        p {
-            margin: 0;
-            padding: 0 25px 0 0;
-            font-size: 16px;
-            line-height: 24px;
-        }
-    
-        img {
-            margin: 10px 0 0 auto;
-            width: 324px;
-            height: 174.15px;
-        }
+  .about {
+    padding: 91px 0 93px 0;
+
+    .container {
+      display: flex;
     }
+
+    h2 {
+      margin: 0 0 16px 0;
+      padding: 0 144px 0 0;
+      font-size: 26px;
+      line-height: 36.4px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 25px 0 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    img {
+      margin: 10px 0 0 auto;
+      width: 324px;
+      height: 174.15px;
+    }
+  }
 }
 
 @include vp-767 {
-    .about {
-        padding: 55px 0 85.12px 0;
-    
-        .container {
-            display: block;
-        }
-    
-        h2 {
-            margin: 0 0 16px 0;
-            padding: 0 100px 0 0;
-            max-width: max-content;
-            font-size: 24px;
-            line-height: 33.6px;
-        }
-    
-        p {
-            max-width: max-content;
-            font-size: 16px;
-            line-height: 24px;
-            margin: 0 0 45px 0;
-        }
-    
-        img {
-            margin: 0 auto 0 auto;
-            max-width: 100%;
-            width: 290px;
-            height: 155.88px;
-        }
+  .about {
+    padding: 55px 0 85.12px 0;
+
+    .container {
+      display: block;
     }
+
+    h2 {
+      margin: 0 0 16px 0;
+      padding: 0 100px 0 0;
+      max-width: max-content;
+      font-size: 24px;
+      line-height: 33.6px;
+    }
+
+    p {
+      max-width: max-content;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 45px 0;
+    }
+
+    img {
+      margin: 0 auto 0 auto;
+      max-width: 100%;
+      width: 290px;
+      height: 155.88px;
+    }
+  }
 }

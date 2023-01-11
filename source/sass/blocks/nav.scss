@@ -34,14 +34,14 @@
     min-width: 400px;
     max-width: 513px;
   }
-  
+
   .nav__link {
     font-size: 14px;
     line-height: 17.07px;
     padding: 5px;
   }
 }
-  
+
 @include vp-767 {
   .nav {
     min-width: auto;
@@ -70,4 +70,3 @@
     padding: 10px 10px 8px 10px;
   }
 }
-  

@@ -23,7 +23,7 @@
 @include vp-1023 {
   .header-bottom {
     padding: 185px 0 275px 0;
-  
+
     h1 {
       font-size: 50px;
       font-weight: 700;
@@ -32,7 +32,7 @@
       word-wrap: break-word;
       margin: 0 0 12px 0;
     }
-  
+
     p {
       font-size: 18px;
       font-weight: 400;
@@ -41,13 +41,13 @@
       word-wrap: break-word;
       margin: 0;
     }
-  }  
+  }
 }
 
 @include vp-767 {
   .header-bottom {
     padding: 113px 0 180px 0;
-  
+
     h1 {
       font-size: 36px;
       font-weight: 700;
@@ -55,7 +55,7 @@
       color: $color-alice-blue;
       word-wrap: break-word;
     }
-  
+
     p {
       font-size: 16px;
       font-weight: 400;
@@ -65,5 +65,5 @@
       max-width: 200px;
       margin: 0;
     }
-  }   
+  }
 }

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {checkForm} from './modules/form/form';
 import {animateAnchors} from './modules/anchor/anchor';
-import {onPopupButtonClick} from './modules/popup/popup'
+import {onPopupButtonClick} from './modules/popup/popup';
 
 // ---------------------------------
 

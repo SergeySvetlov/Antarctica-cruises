@@ -453,6 +453,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 img,
 video {
   display: block;
@@ -634,15 +638,15 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
 }
 
 .header {
-  background-color: #011C40;
+  background-color: #011c40;
   background-image: url("../img/background.jpg");
-  background-size: 1366px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top -185px center;
 }
@@ -671,7 +675,7 @@ button,
   left: -2px;
   width: 18.38px;
   height: 2px;
-  background-color: #011C40;
+  background-color: #011c40;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -684,7 +688,7 @@ button,
   left: -2px;
   width: 18.38px;
   height: 2px;
-  background-color: #011C40;
+  background-color: #011c40;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -802,7 +806,7 @@ button,
 .advantages {
   position: relative;
   padding: 111px 0 120px 0;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   min-height: 562px;
 }
 
@@ -814,7 +818,7 @@ button,
   top: 0;
   left: 0;
   background-image: url("../img/advanteges.jpg");
-  background-size: 1366px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top -150px center;
   opacity: 0.2;
@@ -956,7 +960,7 @@ button,
   flex-direction: column;
   max-width: 260px;
   min-height: 386px;
-  background-color: #011C40;
+  background-color: #011c40;
   color: #f9fbfd;
   padding: 70px 25px 35px 25px;
   font-size: 14px;
@@ -981,7 +985,7 @@ button,
 .cruises__item .cruises__link {
   display: block;
   background-color: #f9fbfd;
-  color: #011C40;
+  color: #011c40;
   margin: auto 0 0 0;
   padding: 9.5px;
   text-align: center;
@@ -1009,9 +1013,9 @@ button,
 
 .feedback {
   padding: 50px 0 50px 0;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   background-image: url("../img/feedback.jpg");
-  background-size: 1366px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top -18px center;
 }
@@ -1032,7 +1036,7 @@ button,
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  color: #011C40;
+  color: #011c40;
   max-width: 493px;
 }
 
@@ -1041,14 +1045,14 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
   max-width: 360px;
 }
 
 .feedback__form {
   width: 100%;
   max-width: 403px;
-  background-color: #011C40;
+  background-color: #011c40;
   margin: 0 0 0 auto;
   padding: 45px 49px 50px 49px;
   /* WebKit, Edge */
@@ -1078,6 +1082,20 @@ button,
   padding: 12px 11px 11px 14px;
   border: none;
   width: 100%;
+}
+
+.feedback__form .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .feedback__form ::-webkit-input-placeholder {
@@ -1167,7 +1185,7 @@ button,
   width: 100%;
   text-align: center;
   padding: 9px;
-  color: #011C40;
+  color: #011c40;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -1249,7 +1267,7 @@ button,
 
 .footer {
   padding: 47px 0 47px 0;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .footer .container {
@@ -1492,9 +1510,8 @@ button,
   }
 
   .header {
-    background-color: #011C40;
+    background-color: #011c40;
     background-image: url("../img/background.jpg");
-    background-size: 1366px auto;
     background-repeat: no-repeat;
     background-position: top -185px center;
   }
@@ -1666,6 +1683,7 @@ button,
 
   .feedback {
     padding: 88px 0 100px 0;
+    background-size: 1366px auto;
   }
 
   .feedback .container {
@@ -1847,7 +1865,7 @@ button,
   }
 
   .header-top__logo-img {
-    fill: #011C40;
+    fill: #011c40;
     width: 42px;
     height: 22px;
   }
@@ -1884,7 +1902,7 @@ button,
   }
 
   .nav__link {
-    color: #011C40;
+    color: #011c40;
     font-size: 18px;
     line-height: 21.94px;
     padding: 10px 10px 8px 10px;

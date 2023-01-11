@@ -1,10 +1,10 @@
 .header {
   background-color: $color-tangaroa;
   background-image: url("../img/background.jpg");
-  background-size: 1366px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top -185px center;
-  
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background@2x.jpg");
   }
@@ -14,10 +14,9 @@
   .header {
     background-color: $color-tangaroa;
     background-image: url("../img/background.jpg");
-    background-size: 1366px auto;
     background-repeat: no-repeat;
     background-position: top -185px center;
-    
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background@2x.jpg");
     }
