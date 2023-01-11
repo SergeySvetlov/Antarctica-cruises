@@ -1190,6 +1190,11 @@ button,
   font-size: 14px;
   line-height: 21px;
   word-wrap: break-word;
+  border: none;
+}
+
+.feedback__form .feedback__button:hover {
+  opacity: 0.5;
 }
 
 .contacts {
@@ -1954,6 +1959,7 @@ button,
     max-width: max-content;
     font-size: 16px;
     line-height: 24px;
+    padding: 0 8px 0 0;
     margin: 0 0 45px 0;
   }
 
@@ -1996,7 +2002,7 @@ button,
   }
 
   .advantages__item--all-inclusive {
-    padding: 70px 47px 20px 21px;
+    padding: 70px 45px 20px 21px;
   }
 
   .advantages__item--excursion {
@@ -2108,6 +2114,7 @@ button,
     min-width: 180px;
     margin: 0 auto;
     min-height: 316px;
+    max-height: 316px;
   }
 
   .contacts__description {
@@ -2118,7 +2125,7 @@ button,
 
   .contacts__description p {
     margin: 0 0 26px 0;
-    max-width: 285px;
+    padding-right: 5px;
   }
 
   .contacts__address p {

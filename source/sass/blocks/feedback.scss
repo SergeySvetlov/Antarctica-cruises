@@ -181,6 +181,11 @@
     font-size: 14px;
     line-height: 21px;
     word-wrap: break-word;
+    border: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 

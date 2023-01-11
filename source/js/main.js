@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {checkForm} from './modules/form/form';
 import {animateAnchors} from './modules/anchor/anchor';
 import {onPopupButtonClick} from './modules/popup/popup';
+import {editText, editTextMobile} from './modules/edit-text/edit-text';
 
 // ---------------------------------
 
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     onPopupButtonClick();
     checkForm();
     animateAnchors();
+    editText();
+    editTextMobile();
   });
 });
 

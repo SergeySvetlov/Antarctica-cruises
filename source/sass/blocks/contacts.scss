@@ -92,6 +92,7 @@
     min-width: 180px;
     margin: 0 auto;
     min-height: 316px;
+    max-height: 316px;
   }
 
   .contacts__description {
@@ -100,7 +101,7 @@
 
     p {
       margin: 0 0 26px 0;
-      max-width: 285px;
+      padding-right: 5px;
     }
   }
 
