@@ -1209,10 +1209,24 @@ button,
   gap: 100px;
 }
 
+.contacts__map-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  top: 40%;
+  left: 50%;
+}
+
 .contacts__map {
   min-width: 560px;
   width: 100%;
   min-height: 306px;
+  position: relative;
 }
 
 .contacts__description {
@@ -1534,7 +1548,8 @@ button,
   }
 
   .header {
-    background-size: 850px auto;
+    background-image: url("../img/background-tablet.jpg");
+    background-size: cover;
     background-position: top center;
   }
 
@@ -1618,8 +1633,10 @@ button,
   }
 
   .advantages::before {
-    background-size: 1000px auto;
-    background-position: top left -90px;
+    background-image: url("../img/advanteges-tablet.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
   }
 
   .advantages h2 {
@@ -1785,14 +1802,23 @@ button,
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
+
+  .advantages::before {
+    background-image: url("../img/advanteges-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
   }
 
   .header {
-    background-size: 767px auto;
-    background-position: top -5px left -205px;
+    background-image: url("../img/background-mobile.jpg");
   }
 
   .header-top {
@@ -1976,8 +2002,7 @@ button,
   }
 
   .advantages::before {
-    background-size: auto 997px;
-    background-position: top left;
+    background-image: url("../img/advanteges-mobile.jpg");
   }
 
   .advantages h2 {
@@ -2034,7 +2059,6 @@ button,
   }
 
   .cruises__item .cruises__img {
-    display: none;
     width: 100%;
     max-height: 386px;
   }
@@ -2045,9 +2069,6 @@ button,
   }
 
   .cruises__item .cruises__hidden {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     max-width: 100%;
     padding: 70px 25px 35px 25px;
   }
@@ -2194,6 +2215,16 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+
+  .advantages::before {
+    background-image: url("../img/advanteges-mobile@2x.jpg");
   }
 }
 

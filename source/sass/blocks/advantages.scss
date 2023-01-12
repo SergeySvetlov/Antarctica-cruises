@@ -92,8 +92,14 @@
     min-height: 588px;
 
     &::before {
-      background-size: 1000px auto;
-      background-position: top left -90px;
+      background-image: url("../img/advanteges-tablet.jpg");
+      background-size: cover;
+      background-position: top center;
+      opacity: 1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advanteges-tablet@2x.jpg");
+      }
     }
 
     h2 {
@@ -131,8 +137,11 @@
     min-height: 997px;
 
     &::before {
-      background-size: auto 997px;
-      background-position: top left;
+      background-image: url("../img/advanteges-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advanteges-mobile@2x.jpg");
+      }
     }
 
     h2 {
