@@ -7,7 +7,7 @@ function init() {
         }),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
+            hintContent: 'Круизы в Антарктику',
             balloonContent: 'Это красивая метка'
         }, {
             // Опции.
