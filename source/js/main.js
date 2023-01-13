@@ -4,6 +4,7 @@ import {checkForm} from './modules/form/form';
 import {animateAnchors} from './modules/anchor/anchor';
 import {onPopupButtonClick} from './modules/popup/popup';
 import {editText, editTextMobile} from './modules/edit-text/edit-text';
+import {initYmaps} from './modules/map/map';
 
 // ---------------------------------
 
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     animateAnchors();
     editText();
     editTextMobile();
+    initYmaps();
   });
 });
 
