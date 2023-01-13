@@ -1622,10 +1622,8 @@ button,
   }
 
   .advantages::before {
-    background-image: url("../img/advanteges-tablet.jpg");
     background-size: cover;
     background-position: top center;
-    opacity: 1;
   }
 
   .advantages h2 {
@@ -1794,10 +1792,6 @@ button,
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/background-tablet@2x.jpg");
-  }
-
-  .advantages::before {
-    background-image: url("../img/advanteges-tablet@2x.jpg");
   }
 }
 
@@ -1991,7 +1985,7 @@ button,
   }
 
   .advantages::before {
-    background-image: url("../img/advanteges-mobile.jpg");
+    background-position: top left;
   }
 
   .advantages h2 {
@@ -2210,10 +2204,6 @@ button,
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/background-mobile@2x.jpg");
-  }
-
-  .advantages::before {
-    background-image: url("../img/advanteges-mobile@2x.jpg");
   }
 }
 
