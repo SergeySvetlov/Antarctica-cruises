@@ -43,7 +43,7 @@
   max-width: 403px;
   background-color: $color-tangaroa;
   margin: 0 0 0 auto;
-  padding: 45px 49px 50px 49px;
+  padding: 45px 49px 53px 49px;
 
   p {
     margin: 0 0 28px 0;
@@ -152,6 +152,7 @@
       height: 17px;
       background-color: $color-alice-blue;
       position: relative;
+      cursor: pointer;
     }
 
     input[type="checkbox"]:checked + .feedback__approval-control::after {
@@ -166,8 +167,9 @@
       background-position: center;
     }
 
-    input[type="checkbox"]:focus + .modal__approval-control {
-      border-color: $color-default-black;
+    input[type="checkbox"]:focus + .feedback__approval-control {
+      outline: 1px solid $color-alice-blue;
+      background-color: $color-neon-blue;
     }
   }
 
@@ -182,6 +184,7 @@
     line-height: 21px;
     word-wrap: break-word;
     border: none;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.5;
@@ -267,6 +270,10 @@
         padding: 0 0 0 10px;
         max-width: 162px;
       }
+    }
+
+    .feedback__button {
+      padding: 9px 9px 12px 9px;
     }
   }
 }

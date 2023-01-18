@@ -23,8 +23,7 @@ function init() {
         });
 
     myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
+        .add(myPlacemark);
 };
 
 const initYmaps = () => {

@@ -716,9 +716,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
@@ -726,10 +726,19 @@ button,
   margin: 0;
 }
 
+.nav__links-list :last-child {
+  margin-right: 0;
+}
+
+.nav__links-list :nth-child(4) {
+  margin-right: 0;
+}
+
 .nav__links-item {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-right: 13.64px;
 }
 
 .nav__link {
@@ -780,6 +789,7 @@ button,
 
 .about h2 {
   display: block;
+  max-width: 600px;
   margin: 57px 0 23px 0;
   padding: 0 160px 0 0;
   font-weight: 600;
@@ -790,6 +800,7 @@ button,
 
 .about p {
   display: block;
+  max-width: 600px;
   margin: 0;
   padding: 0 85px 0 0;
   word-wrap: break-word;
@@ -798,7 +809,9 @@ button,
 .about img {
   display: block;
   margin: 0 0 0 auto;
+  width: 100%;
   max-width: 560px;
+  max-height: 301px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -808,24 +821,13 @@ button,
   padding: 111px 0 120px 0;
   background-color: #e3ecf6;
   min-height: 562px;
-}
-
-.advantages::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url("../img/advanteges.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: top -150px center;
-  opacity: 0.2;
+  background-size: cover;
+  background-position: top center;
 }
 
 .advantages .container {
-  position: absolute;
   left: 0;
   right: 0;
   margin: auto;
@@ -893,6 +895,10 @@ button,
   padding: 85px 0 120px 0;
 }
 
+.cruises .container {
+  padding: 0 10px;
+}
+
 .cruises h2 {
   text-align: center;
   word-wrap: break-word;
@@ -907,6 +913,8 @@ button,
   padding: 0;
   margin: 0;
   width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -922,7 +930,7 @@ button,
   width: 100%;
   margin: 0 auto;
   max-width: 260px;
-  min-height: 386px;
+  aspect-ratio: 1/1.4846;
 }
 
 .cruises__item .cruises__img {
@@ -944,7 +952,7 @@ button,
   line-height: 27px;
   word-wrap: break-word;
   position: absolute;
-  top: 336px;
+  bottom: 24px;
   left: 30px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -958,14 +966,17 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
   max-width: 260px;
-  min-height: 386px;
+  aspect-ratio: 1/1.4846;
   background-color: #011c40;
   color: #f9fbfd;
   padding: 70px 25px 35px 25px;
   font-size: 14px;
   line-height: 19.6px;
   word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .cruises__item h4 {
@@ -1054,7 +1065,7 @@ button,
   max-width: 403px;
   background-color: #011c40;
   margin: 0 0 0 auto;
-  padding: 45px 49px 50px 49px;
+  padding: 45px 49px 53px 49px;
   /* WebKit, Edge */
   /* Firefox 4-18 */
   /* Firefox 19+ */
@@ -1162,6 +1173,7 @@ button,
   height: 17px;
   background-color: #f9fbfd;
   position: relative;
+  cursor: pointer;
 }
 
 .feedback__form .feedback__approval input[type=checkbox]:checked + .feedback__approval-control::after {
@@ -1176,8 +1188,9 @@ button,
   background-position: center;
 }
 
-.feedback__form .feedback__approval input[type=checkbox]:focus + .modal__approval-control {
-  border-color: #000000;
+.feedback__form .feedback__approval input[type=checkbox]:focus + .feedback__approval-control {
+  outline: 1px solid #f9fbfd;
+  background-color: #2c39f2;
 }
 
 .feedback__form .feedback__button {
@@ -1191,6 +1204,7 @@ button,
   line-height: 21px;
   word-wrap: break-word;
   border: none;
+  cursor: pointer;
 }
 
 .feedback__form .feedback__button:hover {
@@ -1198,7 +1212,7 @@ button,
 }
 
 .contacts {
-  padding: 120px 0 110px 0;
+  padding: 120px 0 118px 0;
 }
 
 .contacts .container {
@@ -1206,20 +1220,21 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 40px;
 }
 
 .contacts__map {
   position: relative;
   overflow: hidden;
-  min-width: 560px;
+  min-width: 324px;
   width: 100%;
   min-height: 306px;
   background-color: #d8d8d9;
 }
 
 .contacts__description {
-  padding: 75px 0 0 0;
+  padding: 75px 0 0 60px;
+  min-width: 200px;
 }
 
 .contacts__description p {
@@ -1245,6 +1260,9 @@ button,
   display: block;
   padding: 0 0 0 28px;
   margin: 0 0 25px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background-image: url("../img/svg/phone.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -1257,9 +1275,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-width: 141px;
@@ -1302,9 +1320,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
@@ -1312,10 +1330,19 @@ button,
   max-width: 614px;
 }
 
+.footer__links-list :last-child {
+  margin-right: 0;
+}
+
+.footer__links-list :nth-child(4) {
+  margin-right: 0;
+}
+
 .footer__links-item {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-right: 13.64px;
 }
 
 .footer__link {
@@ -1611,19 +1638,15 @@ button,
   }
 
   .about img {
-    margin: 10px 0 0 auto;
-    width: 324px;
-    height: 174.15px;
+    margin: 10px 5px 0 auto;
+    width: auto;
+    max-width: 324px;
+    max-height: 174.15px;
   }
 
   .advantages {
     padding: 90px 0 100px 0;
     min-height: 588px;
-  }
-
-  .advantages::before {
-    background-size: cover;
-    background-position: top center;
   }
 
   .advantages h2 {
@@ -1657,6 +1680,10 @@ button,
     padding: 88px 0 100px 0;
   }
 
+  .cruises .container {
+    padding: 0 60px;
+  }
+
   .cruises h2 {
     font-size: 26px;
     line-height: 39px;
@@ -1666,23 +1693,25 @@ button,
   .cruises__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
   }
 
   .cruises__item {
-    max-width: 309px;
-  }
-
-  .cruises__item .cruises__img {
-    width: 309px;
+    aspect-ratio: 1/1.2491;
+    max-width: 100%;
   }
 
   .cruises__item h3 {
     left: 37px;
-    top: 332px;
+    bottom: 29px;
   }
 
   .cruises__item .cruises__hidden {
-    max-width: 309px;
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1.2491;
     padding: 70px 35px 35px 35px;
   }
 
@@ -1724,7 +1753,7 @@ button,
   }
 
   .contacts {
-    padding: 100px 0 95px 0;
+    padding: 100px 0 100px 0;
   }
 
   .contacts .container {
@@ -1767,11 +1796,11 @@ button,
   }
 
   .footer {
-    padding: 39px 0 39px 0;
+    padding: 41px 0 39px 0;
   }
 
   .footer__logo-img {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 -1px;
     width: 38px;
     height: 20px;
   }
@@ -1779,6 +1808,10 @@ button,
   .footer__links-list {
     min-width: auto;
     max-width: 464px;
+  }
+
+  .footer__links-item {
+    margin-right: 0;
   }
 
   .footer__link {
@@ -1818,9 +1851,23 @@ button,
     width: 100%;
     max-width: 285px;
     min-height: 568px;
+    height: 100vh;
     padding: 14px 15px 20px 15px;
     margin: 0;
     background-color: #f9fbfd;
+    z-index: 1;
+  }
+
+  .header-top::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    background-color: #002b66;
+    opacity: 0.5;
   }
 
   .header-top .header-top__nav-toggle {
@@ -1834,6 +1881,7 @@ button,
     max-width: 100%;
     min-height: auto;
     background-color: rgba(255, 255, 255, 0);
+    height: auto;
   }
 
   .is-closed .nav {
@@ -1974,17 +2022,13 @@ button,
 
   .about img {
     margin: 0 auto 0 auto;
-    max-width: 100%;
-    width: 290px;
-    height: 155.88px;
+    max-width: 290px;
+    max-height: 155.88px;
   }
 
   .advantages {
     padding: 56px 0 65px 0;
     min-height: 997px;
-  }
-
-  .advantages::before {
     background-position: top left;
   }
 
@@ -2025,6 +2069,10 @@ button,
     padding: 55px 0 65px 0;
   }
 
+  .cruises .container {
+    padding: 0 25px;
+  }
+
   .cruises h2 {
     font-size: 24px;
     line-height: 36px;
@@ -2034,25 +2082,21 @@ button,
   .cruises__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 0 10px 0 10px;
   }
 
   .cruises__item {
-    max-width: 100%;
-  }
-
-  .cruises__item .cruises__img {
-    width: 100%;
-    max-height: 386px;
+    aspect-ratio: 1/1.4296;
+    max-width: 400px;
   }
 
   .cruises__item h3 {
     left: 25px;
-    top: 326px;
+    bottom: 18px;
   }
 
   .cruises__item .cruises__hidden {
-    max-width: 100%;
+    aspect-ratio: 1/1.4296;
+    max-width: 500px;
     padding: 70px 25px 35px 25px;
   }
 
@@ -2104,8 +2148,12 @@ button,
     max-width: 162px;
   }
 
+  .feedback__form .feedback__button {
+    padding: 9px 9px 12px 9px;
+  }
+
   .contacts {
-    padding: 60px 0 59px 0;
+    padding: 60px 0 65px 0;
   }
 
   .contacts .container {
@@ -2143,19 +2191,23 @@ button,
   }
 
   .social-list {
-    margin: 0 auto 0 -8px;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    margin: 0 auto 0 -15px;
     min-width: 100px;
-    max-width: 105px;
+    max-width: 180px;
   }
 
   .social-list__link {
     max-height: 35px;
     max-width: 35px;
     padding: 7px;
+    margin-right: 5px;
   }
 
   .footer {
-    padding: 40px 0 26.5px 0;
+    padding: 40px 0 30px 0;
   }
 
   .footer .container {
@@ -2180,7 +2232,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 270px;
-    margin: 0 0 10px -5px;
+    margin: 0 0 10px -9px;
   }
 
   .footer__links-list .footer__link {
@@ -2212,7 +2264,7 @@ button,
     background-image: url("../img/background@2x.jpg");
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/advanteges@2x.jpg");
   }
 

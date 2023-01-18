@@ -71,9 +71,23 @@
     width: 100%;
     max-width: 285px;
     min-height: 568px;
+    height: 100vh;
     padding: 14px 15px 20px 15px;
     margin: 0;
     background-color: $color-alice-blue;
+    z-index: 1;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      right: 100%;
+      background-color: $color-prussian-blue;
+      opacity: 0.5;
+    }
 
     .header-top__nav-toggle {
       display: block;
@@ -87,6 +101,7 @@
     max-width: 100%;
     min-height: auto;
     background-color: $color-transparent;
+    height: auto;
 
     .nav {
       display: none;
