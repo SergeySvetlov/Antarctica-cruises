@@ -3,10 +3,10 @@ const popupMenu = document.querySelector('[data-menu]');
 
 const disableScroll = () => {
   if (popupMenu.classList.contains('is-closed')) {
-    document.body.style.overflow="auto";
+    document.body.style.overflow = 'auto';
   } else {
-    document.body.style.overflow="hidden";
-  };
+    document.body.style.overflow = 'hidden';
+  }
 };
 
 const openPopup = () => {

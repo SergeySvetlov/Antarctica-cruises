@@ -961,7 +961,13 @@ button,
 }
 
 .cruises__item .cruises__hidden {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1007,15 +1013,18 @@ button,
   width: 100%;
 }
 
+.cruises__item:focus-within {
+  -webkit-box-shadow: 0 0 10px 5px #011c40;
+  box-shadow: 0 0 10px 5px #011c40;
+}
+
 .cruises__item:hover h3 {
   top: 30px;
   left: 25px;
 }
 
 .cruises__item:hover .cruises__hidden {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
 }
 
 .cruises__item:hover .cruises__img {

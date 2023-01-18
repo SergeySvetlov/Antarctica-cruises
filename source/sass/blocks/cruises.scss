@@ -18,7 +18,6 @@
 .cruises__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
@@ -33,7 +32,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 260px;
-  aspect-ratio: 1 / 1.4846;
+  aspect-ratio: 1 / 1.48;
 
   .cruises__img {
     display: flex;
@@ -58,11 +57,15 @@
   }
 
   .cruises__hidden {
-    display: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
     flex-direction: column;
     width: 100%;
     max-width: 260px;
-    aspect-ratio: 1 / 1.4846;
+    aspect-ratio: 1 / 1.48;
     background-color: $color-tangaroa;
     color: $color-alice-blue;
     padding: 70px 25px 35px 25px;
@@ -102,6 +105,10 @@
   }
 }
 
+.cruises__item:focus-within {
+  box-shadow: 0 0 10px 5px $color-tangaroa;
+}
+
 .cruises__item:hover {
   h3 {
     top: 30px;
@@ -109,7 +116,7 @@
   }
 
   .cruises__hidden {
-    display: flex;
+    opacity: 1;
   }
 
   .cruises__img {
@@ -138,7 +145,7 @@
   }
 
   .cruises__item {
-    aspect-ratio: 1 / 1.2491;
+    aspect-ratio: 1 / 1.25;
     max-width: 100%;
 
     h3 {
@@ -149,7 +156,7 @@
     .cruises__hidden {
       max-width: 100%;
       height: 100%;
-      aspect-ratio: 1 / 1.2491;
+      aspect-ratio: 1 / 1.25;
       padding: 70px 35px 35px 35px;
     }
   }
@@ -181,7 +188,7 @@
   }
 
   .cruises__item {
-    aspect-ratio: 1 / 1.4296;
+    aspect-ratio: 1 / 1.43;
     max-width: 400px;
 
     h3 {
@@ -190,7 +197,7 @@
     }
 
     .cruises__hidden {
-      aspect-ratio: 1 / 1.4296;
+      aspect-ratio: 1 / 1.43;
       max-width: 500px;
       padding: 70px 25px 35px 25px;
     }
