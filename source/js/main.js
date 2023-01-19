@@ -2,8 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {checkForm} from './modules/form/form';
 import {animateAnchors} from './modules/anchor/anchor';
-import {onPopupButtonClick} from './modules/popup/popup';
-import {editText, editTextMobile} from './modules/edit-text/edit-text';
+import {onPopupButtonClick, onOverlayClick} from './modules/popup/popup';
+import {editText} from './modules/edit-text/edit-text';
 import {initYmaps} from './modules/map/map';
 
 // ---------------------------------
@@ -23,10 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     onPopupButtonClick();
+    onOverlayClick();
     checkForm();
     animateAnchors();
     editText();
-    editTextMobile();
     initYmaps();
   });
 });

@@ -19,4 +19,12 @@ const onPopupButtonClick = () => {
   popupButton.addEventListener('click', openPopup);
 };
 
-export {onPopupButtonClick};
+const onOverlayClick = () => {
+  document.addEventListener('click', function (e) {
+    if ((e.target != popupMenu) && (popupMenu.classList.contains('is-closed') != true)) {
+      popupMenu.classList.add('is-closed');
+    };
+  });
+};
+
+export {onPopupButtonClick, onOverlayClick};

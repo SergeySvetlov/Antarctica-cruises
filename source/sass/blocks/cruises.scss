@@ -208,4 +208,21 @@
       left: 25px;
     }
   }
+
+  .cruises__item:focus-within {
+    box-shadow: none;
+
+    h3 {
+      top: 30px;
+      left: 25px;
+    }
+  
+    .cruises__hidden {
+      opacity: 1;
+    }
+  
+    .cruises__img {
+      display: none;
+    }
+  }
 }
