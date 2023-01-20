@@ -106,7 +106,18 @@
 }
 
 .cruises__item:focus-within {
-  box-shadow: 0 0 10px 5px $color-tangaroa;
+  h3 {
+    top: 30px;
+    left: 25px;
+  }
+
+  .cruises__hidden {
+    opacity: 1;
+  }
+
+  .cruises__img {
+    display: none;
+  }
 }
 
 .cruises__item:hover {
@@ -161,6 +172,12 @@
     }
   }
 
+  .cruises__item:focus-within {
+    h3 {
+      left: 35px;
+    }
+  }
+
   .cruises__item:hover {
     h3 {
       left: 35px;
@@ -210,19 +227,8 @@
   }
 
   .cruises__item:focus-within {
-    box-shadow: none;
-
     h3 {
-      top: 30px;
       left: 25px;
-    }
-
-    .cruises__hidden {
-      opacity: 1;
-    }
-
-    .cruises__img {
-      display: none;
     }
   }
 }

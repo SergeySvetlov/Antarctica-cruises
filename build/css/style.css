@@ -1012,9 +1012,17 @@ button,
   width: 100%;
 }
 
-.cruises__item:focus-within {
-  -webkit-box-shadow: 0 0 10px 5px #011c40;
-  box-shadow: 0 0 10px 5px #011c40;
+.cruises__item:focus-within h3 {
+  top: 30px;
+  left: 25px;
+}
+
+.cruises__item:focus-within .cruises__hidden {
+  opacity: 1;
+}
+
+.cruises__item:focus-within .cruises__img {
+  display: none;
 }
 
 .cruises__item:hover h3 {
@@ -1723,6 +1731,10 @@ button,
     padding: 70px 35px 35px 35px;
   }
 
+  .cruises__item:focus-within h3 {
+    left: 35px;
+  }
+
   .cruises__item:hover h3 {
     left: 35px;
   }
@@ -2115,22 +2127,8 @@ button,
     left: 25px;
   }
 
-  .cruises__item:focus-within {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
   .cruises__item:focus-within h3 {
-    top: 30px;
     left: 25px;
-  }
-
-  .cruises__item:focus-within .cruises__hidden {
-    opacity: 1;
-  }
-
-  .cruises__item:focus-within .cruises__img {
-    display: none;
   }
 
   .feedback {
