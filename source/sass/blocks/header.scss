@@ -42,5 +42,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-mobile@2x.jpg");
     }
+
+    .is-overlay {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-allports;
+      z-index: 1;
+    }
   }
 }

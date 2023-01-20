@@ -1,3 +1,5 @@
+const popupMenu = document.querySelector('[data-menu]');
+const overlay = document.querySelector('[data-overlay]');
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
 const ANIMATION_TIME = 1500;
@@ -30,6 +32,9 @@ const animateAnchors = () => {
         }
       // время интервала равняется частному от времени анимации и к-ва кадров
       }, ANIMATION_TIME / FRAMES_COUNT);
+      overlay.classList.remove('is-overlay');
+      popupMenu.classList.add('is-closed');
+      document.body.style.overflow = 'auto';
     });
   });
 };

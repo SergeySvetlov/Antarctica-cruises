@@ -1845,8 +1845,17 @@ button,
     background-image: url("../img/background-mobile.jpg");
   }
 
-  .header-top {
+  .header .is-overlay {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(43, 102, 128, 0.5);
+    z-index: 1;
+  }
+
+  .header-top {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-line-pack: start;
@@ -1858,24 +1867,12 @@ button,
     right: 0;
     width: 100%;
     max-width: 285px;
-    min-height: 568px;
     height: 100vh;
     padding: 14px 15px 20px 15px;
-    margin: 0;
+    margin: 0 -15px 0 auto;
     background-color: #f9fbfd;
-    z-index: 1;
-  }
-
-  .header-top::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 100%;
-    top: 0;
-    right: 100%;
-    background-color: #002b66;
-    opacity: 0.5;
+    z-index: 2;
+    overflow-y: auto;
   }
 
   .header-top .header-top__nav-toggle {
@@ -1883,9 +1880,15 @@ button,
     margin: 10px 0 0 0;
   }
 
+  .is-js {
+    position: absolute;
+    margin: 0;
+  }
+
   .is-closed {
     position: static;
     padding: 20px 0 20px 0;
+    margin: 0;
     max-width: 100%;
     min-height: auto;
     background-color: rgba(255, 255, 255, 0);
